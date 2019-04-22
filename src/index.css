@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.add-new-item-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-new-item-form > div {
+  width: 70%;
+}
+
+.add-new-item-form button {
+  padding: 6px 34px!important;
+  text-transform: capitalize;
+  font-weight: #fff;
+}
+
+.item-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  min-height: 48px;
+}
+
+.item-block.active {
+  border-left: 5px solid red;
+}
+
+.item-block:hover {
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
+.item-block.active .item-content {
+  margin-left: 19px;
+}
+
+.item-content-block {
+  display: flex;
+  max-width: calc(100% - 140px);
+  word-break: break-word;
+}
+
+.item-content {
+  margin-right: 40px;
+  font-weight: bold;
+  margin-left: 24px;
+}
+
+.item-comments-count {
+  display: flex;
+  background-color: #4da6ff;
+  min-width: 40px;
+  height: 20px;
+  justify-content: center;
+  border-radius: 20px;
+  align-self: center;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.add-new-item-form-section {
+  margin-bottom: 10px;
+  padding: 0 24px;
+}
+
+.item-delete {
+  padding: 3px 20px!important;
+  margin-right: 24px!important;
+}
+
+.comment {
+  display: flex;
+}
+
+.comment + hr {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  border-radius: 0!important;
+  width: 60px!important;
+  height: 60px!important;
+  margin-right: 15px;
+}
+
+.add-new-comment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.add-new-comment-form > div {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.comment-textarea {
+  width: 100%;
+}
+
+.comment-textarea input {
+  height: 45px!important;
+}
+
+.add-new-comment-form button {
+  text-transform: capitalize;
+  background-color: #4da6ff;
+  padding: 6px 32px!important;
+  height: 39px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.languages-list {
+  position: relative;
+  background: #a8783f;
+  width: auto;
+  width: fit-content;
+  padding: 10px 20px;
+  margin-top: 15px;
+  display: flex;
+  align-self: center;
+}
+
+.languages-list:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #a8783f;
+	border-top: 0;
+	margin-left: -10px;
+  margin-top: -10px;
+  z-index: 100000;
+}
+
+.languages-list-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.language {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  justify-content: left;
+}
+
+.language:hover {
+  opacity: 0.5;
+}
+
+.languages-list-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+#outlined-bare {
+  padding: 10px;
+}
+
+.add-new-comment-form-section {
+  margin-top: 20px;
+}
+
+.comments-section hr:last-child {
+  display: none;
+}
+
+#contained-bare {
+  padding: 10px;
+}
+
+.comment-content {
+  word-break: break-all;
+  color: #565a69;
+}
+
+.flag {
+  height: 15px;
+  margin: 0 15px;
+}
